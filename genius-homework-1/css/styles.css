@@ -3,14 +3,19 @@
     --color-primary-blue: #2B7FFF;
     --color-primary-dark: #011C44;
     --color-primary-light: #FFFFFF;
+    --secoundary-color-dark-grey: #4A4A4A;
+    --secoundary-color-light-grey: #747272;
+    --secoundary-color-dark-blue: #011F4A;
+    --secoundary-color-yellow: #FFD02B;
 }
 
 /* base */
 body {
-
-    font-size: 18 px;
+    color: var(--color-primary-dark);
+    font-family: 'Roboto';
+    font-size: 22px;
     font-weight: 400;
-    line-height: 1.5;
+
 }
 
 address {
@@ -23,119 +28,129 @@ ul {
 
 /* button */
 .button {
+    font-size: 18px;
     font-weight: 600;
     color: var(--color-primary-light);
-    border: 2px solid var(--color-brand-light);
-    background-color: var(--color-brand-light);
-    border-radius: 8px;
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-primary-blue);
+    border-radius: 32px;
     cursor: pointer;
+    width: 219px;
+    height: 53px;
+
+
 }
 
 .button:hover {
     background-color: transparent;
-    color: var(--color-primary-dark);
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+}
+
+.button-free {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-primary-blue);
+    border-radius: 32px;
+    cursor: pointer;
+    width: 281px;
+    height: 53px;
+
+
+}
+
+.button-free:hover {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
 }
 
 /* link */
 .link {
-
-    font-size: 20px;
-    color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    font-size: 18px;
     text-decoration: none;
 }
 
 .link:hover {
-    color: var(--color-brand-light);
-    font-weight: 600;
+    color: var(--color-primary-blue);
+    font-weight: 700;
 }
 
 /* hero section */
+.cosmetical-clinic {
+    font-size: 18px;
+}
+
 .hero-title {
-    color: var(--color-primary-light);
+    color: var(--color-primary-blue);
+    font-family: 'Play', sans-serif;
     text-align: center;
-    font-size: 128px;
-    font-weight: 900;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 114px;
+    width: 529px;
+    height: 228px;
+    text-transform: capitalize;
 }
 
 .hero-title .accent {
     color: var(--color-brand-light);
 }
 
-/* advantages section */
-.advantages-list {
-    background-color: var(--color-brand-light);
-    color: var(--color-primary-light);
-    font-size: 20px;
-    font-weight: 300;
+.consultation-text {
+    font-size: 12px;
+}
+
+/* changes section */
+.changes-text {
+    color: var(--color-primary-blue);
+    text-transform: capitalize;
 }
 
 /* section title */
 .section-title {
     font-size: 64px;
-    font-weight: 900;
-    line-height: 1.3;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .section-title .accent {
-    color: var(--color-brand-dark);
+    color: var(--color-primary-blue);
 }
 
-/* traditions section */
-.traditions-section-text .brand {
-    color: var(--color-brand-light);
+/* adventages section */
+.adventages-text {
+    color: #000000;
+    font-size: 18px;
 }
 
-.traditions-section-text .brand.uppercase {
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-/* chef-section */
-.chef-section {
-    font-size: 40px;
-    font-weight: 600;
-}
-
-/* format section */
+/* procedures-section */
 .format-title {
-    font-size: 24px;
+    color: var(--color-primary-light);
+    line-height: 1.2;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* contact-section */
+.for-free {
     font-weight: 600;
+    color: var(--color-primary-light);
 }
 
-.format-text {
-    font-size: 14px;
-    font-weight: 300;
+.for-free .free {
+    color: var(--color-primary-blue);
 }
 
-/* contact section */
 .political-text {
-    color: var(--color-primary-dark);
-    font-size: 12 px;
-    font-weight: 400;
+    font-size: 12px;
+    color: var(--secoundary-color-light-grey);
 }
 
-.political-link {
+.political-text .political-link {
     text-decoration: underline;
-    color: var(--color-primary-dark);
-    font-size: 12 px;
-    font-weight: 400;
-}
-
-/* footer */
-.address-link {
-    font-size: 14px;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--color-primary-light)
-}
-
-.address-link:hover {
-    color: var(--color-brand-light);
-
-}
-
-.address-copyright {
-    color: #A18268;
-    font-size: 14px;
-    font-weight: 400;
+    color: var(--secoundary-color-light-grey);
 }
