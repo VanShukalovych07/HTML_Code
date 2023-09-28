@@ -1,5 +1,5 @@
 :root {
-    /* --color-brand-dark: #465929; */
+
     --color-primary-blue: #2B7FFF;
     --color-primary-dark: #011C44;
     --color-primary-light: #FFFFFF;
@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto';
     font-size: 22px;
     font-weight: 400;
+    /* background-color: #011C44; */
 
 }
 
@@ -79,6 +80,8 @@ ul {
     font-weight: 700;
 }
 
+
+
 /* hero section */
 .cosmetical-clinic {
     font-size: 18px;
@@ -125,7 +128,10 @@ ul {
 .adventages-text {
     color: #000000;
     font-size: 18px;
+    text-align: left;
 }
+
+
 
 /* procedures-section */
 .format-title {
@@ -152,5 +158,17 @@ ul {
 
 .political-text .political-link {
     text-decoration: underline;
+    color: var(--secoundary-color-light-grey);
+}
+
+/* footer */
+.link-footer {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.address-copyright {
+    font-size: 13px;
     color: var(--secoundary-color-light-grey);
 }
