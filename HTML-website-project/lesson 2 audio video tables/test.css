@@ -2,22 +2,22 @@
     box-sizing: border-box;
 }
 
-.box {
+.item {
     display: inline;
-    width: 100px;
+    /*width */
+    flex-basis: 100px;
     height: 100px;
     background-color: aqua;
-    /* padding: 10px; */
-    /* border: 5px dotted darkred;
-    padding: 16px 42px; */
+    padding: 10px;
+    border: 5px dotted darkred;
+    padding: 16px 42px;
     margin: 15px;
     padding: 15px;
 }
 
-.box:nth-child(odd),
-/* .box:nth-child(even,n + 3) { */
-background-color: goldenrod;
-/* .box:first-child()
-    .box:last-child()
-    .box:not(1) */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
 }

@@ -21,6 +21,7 @@ p {
 }
 
 body {
+    background-color: lightslategray;
     color: var(--color-primary-dark) font-family'Poppins', sans-serif;
     font-size: 18 px;
     font-weight: 400;
@@ -34,6 +35,8 @@ address {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -65,6 +68,8 @@ ul {
     background-color: var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
+    padding: 16px 32px;
+
 }
 
 .button:hover {
@@ -82,8 +87,30 @@ ul {
 
 .link:hover {
     color: var(--color-brand-light);
-    font-weight: 600;
 }
+
+/* header */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+
 
 /* hero section */
 .hero-section {
@@ -104,11 +131,30 @@ ul {
 }
 
 /* advantages section */
-.advantages-list {
+.adventages-container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.adventages-section {
     background-color: var(--color-brand-light);
+    padding: 16px 0px;
+}
+
+.adventages-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.adventages-item {
     color: var(--color-primary-light);
     font-size: 20px;
     font-weight: 300;
+
 }
 
 /* section title */
@@ -127,8 +173,19 @@ ul {
 }
 
 /* traditions section */
+.traditions-container {
+    display: flex;
+    gap: 40px;
+}
+
+.traditions-content {
+    justify-content: space-between;
+    max-width: 710px;
+}
+
 .traditions-section {
     padding-top: 96px;
+
 }
 
 .traditions-section-text .brand {
@@ -139,6 +196,10 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/* .traditions-section-text .limited {
+    max-width: 340px;
+} */
 
 /* chef-section */
 .chefs-title {
@@ -152,6 +213,24 @@ ul {
 }
 
 /* format section */
+.formats-list {
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.format-card {
+    padding: 24px;
+    border: 1px solid var(--color-primary-dark);
+    /*  remove */
+    border-radius: 16px;
+    max-width: 350px;
+}
+
+/* .format-item {
+    flex-basis: calc(100% - 40px /3);
+} */
+
 .format-title {
     margin-bottom: 80px;
 }
