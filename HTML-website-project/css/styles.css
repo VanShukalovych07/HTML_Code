@@ -243,6 +243,25 @@ ul {
 }
 
 /* format section */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 .formats-list {
     display: flex;
     gap: 20px;
@@ -263,12 +282,12 @@ ul {
 
 }
 
-.format-card.Walrus-card {
-    /* background-image: url('../images/Walrus.jpg');
+/* .format-card.Walrus-card { */
+/* background-image: url('../images/Walrus.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
-}
+/* } */
 
 .format-title {
     margin-bottom: 80px;
@@ -310,6 +329,14 @@ ul {
     background-size: cover;
     background-position: center;
 
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
 }
 
 .address-link {
