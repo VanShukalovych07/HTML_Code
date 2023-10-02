@@ -221,7 +221,8 @@ ul {
 /* chef-section */
 .chefs-list {
     display: flex;
-    gap: 30px;
+    gap: 40px 30px;
+    /* flex-wrap: wrap; */
 }
 
 .chef-card {
