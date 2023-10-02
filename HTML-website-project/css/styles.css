@@ -19,7 +19,13 @@ p {
     margin-top: 0;
 }
 
-* {
+a {
+    display: inline-block;
+}
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -165,7 +171,7 @@ ul {
 }
 
 /* section title */
-.traditions-title {
+.traditions-title.section-title {
     margin-bottom: 42px;
 }
 
@@ -213,13 +219,30 @@ ul {
 } */
 
 /* chef-section */
+.chefs-list {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+
+.chefs-item {
+    display: flex;
+    flex-basis: calc(100% - 30px / 2);
+}
+
 .section-title {
     max-width: 520px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
-.chefs-list::after,
-.chefs-list::before {
+.chefs-list-title::after,
+.chefs-list-title::before {
     display: block;
     width: 352px;
     height: 0px;
@@ -232,8 +255,12 @@ ul {
     box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secoundary-dark);
 }
 
-.chefs-title {
-    margin-bottom: 80px;
+.chefs-text p {
+    margin-bottom: 24px;
+}
+
+.chefs-text p:last-child {
+    margin-bottom: 0;
 }
 
 .chef-title {
@@ -243,12 +270,19 @@ ul {
 }
 
 /* format section */
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 .carousel-button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
+    flex-shrink: 0;
     fill: var(--color-primary-dark);
     border: 1px solid var(--color-primary-dark);
     border-radius: 50%;
@@ -304,8 +338,20 @@ ul {
 }
 
 /* contact section */
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
 .contact-title {
-    margin-bottom: 16px;
+    padding-bottom: 96px;
+
 }
 
 .political-text {
@@ -328,6 +374,35 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
+
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
+.social-net {
+    display: flex;
+    gap: 22px;
 
 }
 
