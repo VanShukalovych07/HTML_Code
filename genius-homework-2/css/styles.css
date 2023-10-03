@@ -1,0 +1,176 @@
+:root {
+
+    --color-primary-blue: #2B7FFF;
+    --color-primary-dark: #011C44;
+    --color-primary-light: #FFFFFF;
+    --secoundary-color-dark-grey: #4A4A4A;
+    --secoundary-color-light-grey: #747272;
+    --secoundary-color-dark-blue: #011F4A;
+    --secoundary-color-yellow: #FFD02B;
+}
+
+/* base */
+body {
+    color: var(--color-primary-dark);
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 400;
+    /* background-color: #011C44; */
+
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* button */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-primary-blue);
+    border-radius: 32px;
+    cursor: pointer;
+    width: 219px;
+    height: 53px;
+
+
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+}
+
+.button-free {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-primary-blue);
+    border-radius: 32px;
+    cursor: pointer;
+    width: 281px;
+    height: 53px;
+
+
+}
+
+.button-free:hover {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+}
+
+/* link */
+.link {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+}
+
+/* header */
+
+
+
+/* hero section */
+.cosmetical-clinic {
+    font-size: 18px;
+}
+
+.hero-title {
+    color: var(--color-primary-blue);
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 114px;
+    width: 529px;
+    height: 228px;
+    text-transform: capitalize;
+}
+
+.hero-title .accent {
+    color: var(--color-brand-light);
+}
+
+.consultation-text {
+    font-size: 12px;
+}
+
+/* changes section */
+.changes-text {
+    color: var(--color-primary-blue);
+    text-transform: capitalize;
+}
+
+/* section title */
+.section-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-title .accent {
+    color: var(--color-primary-blue);
+}
+
+/* adventages section */
+.adventages-text {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+
+/* procedures-section */
+.format-title {
+    color: var(--color-primary-light);
+    line-height: 1.2;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* contact-section */
+.for-free {
+    font-weight: 600;
+    color: var(--color-primary-light);
+}
+
+.for-free .free {
+    color: var(--color-primary-blue);
+}
+
+.political-text {
+    font-size: 12px;
+    color: var(--secoundary-color-light-grey);
+}
+
+.political-text .political-link {
+    text-decoration: underline;
+    color: var(--secoundary-color-light-grey);
+}
+
+/* footer */
+.link-footer {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.address-copyright {
+    font-size: 13px;
+    color: var(--secoundary-color-light-grey);
+}
