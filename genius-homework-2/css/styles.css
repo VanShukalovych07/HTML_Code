@@ -10,12 +10,32 @@
 }
 
 /* base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--color-primary-dark);
     font-family: 'Roboto';
     font-size: 22px;
     font-weight: 400;
-    /* background-color: #011C44; */
+    margin: 0;
 
 }
 
@@ -25,6 +45,13 @@ address {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* section */
+.section {
+    padding: 48px 0;
 }
 
 /* button */
@@ -80,13 +107,43 @@ ul {
     font-weight: 700;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
 /* header */
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 240px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+
+
 
 
 
 /* hero section */
 .cosmetical-clinic {
     font-size: 18px;
+    margin-left: 206px;
 }
 
 .hero-title {
@@ -99,6 +156,8 @@ ul {
     width: 529px;
     height: 228px;
     text-transform: capitalize;
+    margin-left: 206px;
+    margin-bottom: 40px;
 }
 
 .hero-title .accent {
