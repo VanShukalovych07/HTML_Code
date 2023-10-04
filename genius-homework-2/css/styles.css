@@ -63,10 +63,8 @@ ul {
     background-color: var(--color-primary-blue);
     border-radius: 32px;
     cursor: pointer;
-    width: 219px;
-    height: 53px;
-
-
+    padding: 16px 32px;
+    margin-bottom: 14px;
 }
 
 .button:hover {
@@ -83,8 +81,7 @@ ul {
     background-color: var(--color-primary-blue);
     border-radius: 32px;
     cursor: pointer;
-    width: 281px;
-    height: 53px;
+    padding: 16px 32px;
 
 
 }
@@ -120,20 +117,35 @@ ul {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    gap: 240px;
+
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-grow: 1;
-    gap: 240px;
+
 }
 
 .nav-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 56px;
+}
+
+.contact-footer {
+    display: flex;
+    flex-grow: 1;
+}
+
+.contact-icons-footer {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-footer-icon {
+    fill: var(--color-primary-dark);
 }
 
 
@@ -141,31 +153,33 @@ ul {
 
 
 /* hero section */
+.hero-section {
+    margin-left: 206px;
+}
+
 .cosmetical-clinic {
     font-size: 18px;
-    margin-left: 206px;
 }
 
 .hero-title {
     color: var(--color-primary-blue);
     font-family: 'Play', sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 140px;
     font-weight: 700;
     line-height: 114px;
-    width: 529px;
-    height: 228px;
     text-transform: capitalize;
-    margin-left: 206px;
     margin-bottom: 40px;
-}
-
-.hero-title .accent {
-    color: var(--color-brand-light);
 }
 
 .consultation-text {
     font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.consultations-text {
+    font-size: 12px;
+    margin: 0;
 }
 
 /* changes section */

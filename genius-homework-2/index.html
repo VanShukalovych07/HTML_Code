@@ -17,8 +17,8 @@
     <header>
         <div class="container">
             <div class="header-container">
+                <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="логотип beauty zone"></a>
                 <nav class="header-nav">
-                    <a href="./index.html"><img src="./\/images/logo.svg" alt="логотип beauty zone"></a>
                     <ul class="nav-list">
                         <li class="menu-item"><a class=" link" href="#changes-section">Про нас</a></li>
                         <li class="menu-item"><a class=" link" href="#adventages-section">Чому ми</a></li>
@@ -27,38 +27,61 @@
                     </ul>
                 </nav>
                 <div class="contact-footer">
-                    <ul>
-                        <li><a href="#"> </a></li> <!-- telefon icon -->
-                        <li><a href="#"> </a></li> <!--facefook icon -->
-                        <li><a href="#"> </a></li> <!--instagram icon -->
+                    <ul class="contact-icons-footer">
+                        <li>
+                            <a href="#">
+                                <svg class="contact-footer-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-phone"> </use>
+                                </svg>
+                            </a>
+                        </li> <!-- telefon icon -->
+                        <li>
+                            <a href="#">
+                                <svg class="contact-footer-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-facefook"> </use>
+                                </svg>
+                            </a>
+                        </li> <!--facefook icon -->
+                        <li>
+                            <a href="#">
+                                <svg class="contact-footer-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-instagram"> </use>
+                                </svg>
+                            </a>
+                        </li> <!--instagram icon -->
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section> <!-- 1 -->
+        <section class="section hero-section"> <!-- 1 -->
             <p class="cosmetical-clinic">Косметологічна клініка</p>
-            <h1 class="hero-title">Beauty
+            <h1 class="hero-title">Beauty <br>
                 Zone</h1>
             <button class="button">Замовити дзвінок</button>
-            <p class="consultation-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+            <p class="consultation-text">Запишись та отримай безкоштовну </p>
+            <p class="consultations-text"> консультацію нашого косметолога</p>
         </section>
 
-        <section id="changes-section"> <!-- 2 -->
-            <h2 class="section-title">Перевтілюйтесь в <span class="changes-text">beauty zone!</span></h2>
+        <section class="section changes-section" id="changes-section"> <!-- 2 -->
+            <h2 class="section-title">Перевтілюйтесь <br>
+                в <span class="changes-text">beauty zone!</span>
+            </h2>
             <p>Наша косметологічна клініка пропонує вам професійні послуги
                 з догляду за шкірою обличчя та тіла.</p>
             <p>B beauty zone ми гарантуємо найвищі стандарти якості
                 та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та
                 молодість.
                 З нами краса назавжди!</p>
-            <img src="#" alt="Жінка фото до">
+            <svg class="contact-footer-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-phone"> </use>
+            </svg>
             <!-- <img src="#" alt="star"> -->
             <img src="#" alt="Жінка фото після">
         </section>
 
-        <section id="adventages-section"> <!-- 3 -->
+        <section class="section adventages-section" id="adventages-section"> <!-- 3 -->
             <h2 class="section-title">Чому люди
                 <span class="accent">обирають нас</span>
             </h2>
@@ -91,7 +114,7 @@
 
         </section>
 
-        <section id="procedures-section"> <!-- 4 -->
+        <section class="section procedures-section" id="procedures-section"> <!-- 4 -->
             <h2 class="section-title">Наші <span class="accent">процедури</span></h2>
             <ul>
                 <li>
@@ -115,7 +138,7 @@
             </ul>
         </section>
 
-        <section id="contact-section"> <!-- 5 -->
+        <section class="section contact-section" id="contact-section"> <!-- 5 -->
             <h2 class="section-title">Як нас <span class="accent">знайти</span></h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461176!2d30.518175300000014!3d50.44235660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2see!4v1695829873779!5m2!1sru!2see"
