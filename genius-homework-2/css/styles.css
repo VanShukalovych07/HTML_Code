@@ -215,6 +215,19 @@ ul {
 
 }
 
+.main-star {
+    fill: var(--color-primary-dark);
+}
+
+.secound-star {
+    margin-bottom: 183px;
+    fill: var(--color-primary-blue);
+}
+
+.last-star {
+    fill: var(--secoundary-color-light-grey);
+}
+
 .chahges-title {
     margin-bottom: 40px;
 }
@@ -282,13 +295,12 @@ ul {
     height: 444px;
     background-color: var(--color-primary-light);
     padding: 32px;
-    border: 1px solid var(--color-primary-dark);
     border-radius: 32px;
     max-width: 316px;
     height: fit-content;
     align-items: center;
     justify-content: center;
-
+    box-shadow: 0px 4px 4px 0px #A8C6F561;
 }
 
 .adventages-box p {
@@ -368,6 +380,19 @@ ul {
     display: flex;
     align-items: end;
     justify-content: center;
+}
+
+.procedures-mask {
+    background-image: url(../images/massage\ face.svg);
+    /* background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%); */
+}
+
+.procedures-iniection {
+    background-image: url(../images/iniection.svg);
+}
+
+.procedures-clean {
+    background-image: url(../images/clean\ skin.svg);
 }
 
 /* .contact-section */
