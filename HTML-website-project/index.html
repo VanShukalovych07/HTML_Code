@@ -25,7 +25,7 @@
             <li class="menu-item"><a class=" link" href="#contact-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button">Замовити дзвінок</button>
+        <button class="modal-btn-open">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -67,7 +67,9 @@
 
     <section class="chefs-title section" id="cooker-section"> <!-- 3 -->`
       <div class="container">
-        <h2 class="section-title chefs-list-title center">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
+        <h2 class="section-title chefs-list-title center">Наші найкращі <br>
+          <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul class="chefs-list">
           <li class="chefs-item">
             <article class="chef-card">
@@ -163,7 +165,7 @@
           <div class="contact-form">
             <h2 class="section-title">Приєднуйтесь до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <button class="button">Замовити дзвінок</button>
+            <button class="modal-btn-open">Замовити дзвінок</button>
             <p class="politiclal-text">Натискаючи на кнопку я погоджуюсь <a class="political-link" href="#"
                 target="blank">
                 політикою
@@ -223,6 +225,15 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop">
+    <div class="modal">
+      <button type="button" class="modal-btn-close">
+        close
+      </button>
+
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

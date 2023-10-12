@@ -70,7 +70,7 @@ ul {
 }
 
 /* button */
-.button {
+.modal-btn-open {
     font-weight: 600;
     color: var(--color-primary-light);
     border: 2px solid var(--color-brand-normal);
@@ -81,7 +81,7 @@ ul {
 
 }
 
-.button:hover {
+.modal-btn-open:hover {
     background-color: transparent;
     color: var(--color-primary-dark);
 }
@@ -237,18 +237,30 @@ ul {
 }
 
 .section-title {
-    max-width: 520px;
+    position: relative;
     margin: 0 auto;
     margin-bottom: 80px;
 }
 
-.chefs-list-title::after,
-.chefs-list-title::before {
+.chefs-list-title::before,
+.chefs-list-title::after {
+    position: absolute;
+    bottom: 24px;
     display: block;
     width: 352px;
     height: 0px;
     border: 2px solid var(--color-brand-light);
     content: '';
+}
+
+.chefs-list-title::before {
+    position: absolute;
+    left: 0;
+}
+
+.chefs-list-title::after {
+    position: absolute;
+    right: 0;
 }
 
 .chef-foto {
@@ -376,7 +388,7 @@ ul {
     background-size: cover;
     background-position: center;
     padding: 32px 0;
-
+    position: relative;
 }
 
 .footer-container {
@@ -431,4 +443,61 @@ ul {
     color: #A18268;
     font-size: 14px;
     font-weight: 400;
+}
+
+.footer::after,
+.footer::before {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.footer::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url(../images/bread\ decour\ small.png);
+}
+
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(../images/bread\ decour\ large.png);
+}
+
+/* modal window */
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+
+
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.backdrop.is-hidden {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
 }
