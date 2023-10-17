@@ -25,7 +25,7 @@
             <li class="menu-item"><a class=" link" href="#contact-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="modal-btn-open">Замовити дзвінок</button>
+        <button type="button" class="modal-btn-open">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -163,15 +163,33 @@
       <div class="container">
         <div class="contact-container">
           <div class="contact-form">
-            <h2 class="section-title">Приєднуйтесь до мережі пекарень</h2>
-            <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <button class="modal-btn-open">
-              Замовити дзвінок
-            </button>
-            <p class="politiclal-text">Натискаючи на кнопку я погоджуюсь <a class="political-link" href="#"
-                target="blank">
-                політикою
-                конфіденційності</a></p>
+            <h2 class="section-title contact">Приєднуйся до мережі пекарень</h2>
+            <p class="modal-text contact">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+            </p>
+            <form name="contact-form" autocomplete="off" novalidate>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="user name">Ім'я</label>
+                <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" />
+              </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+              </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+                <input class="form-input" type="email" id="user-email" name="user-email"
+                  placeholder="Електронна пошта" />
+              </div>
+              <div class="form-btn">
+                <button type="submit" class="modal-btn-open form">
+                  Замовити дзвінок
+                </button>
+              </div>
+              <p class="political-text form">Натискаючи на кнопку я погоджуюсь з<br>
+                <a class="political-link" href="#" target="blank">
+                  політикою конфіденційності</a>
+              </p>
+            </form>
           </div>
           <iframe class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2see!4v1695553784741!5m2!1sru!2see"
@@ -232,6 +250,33 @@
       <button type="button" class="modal-btn-close">
         close
       </button>
+      <h2 class="modal-title">Замовити дзвінок</h2>
+      <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+      </p>
+      <form name="modal-form" autocomplete="off">
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user name">Ім'я</label>
+          <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" />
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+          <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" />
+        </div>
+        <div class="form-btn">
+          <button type="submit" class="modal-btn-open form">
+            Замовити дзвінок
+          </button>
+        </div>
+        <p class="political-text form">Натискаючи на кнопку я погоджуюсь <br>
+          <a class="political-link" href="#" target="blank">
+            з політикою конфіденційності</a>
+        </p>
+
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
