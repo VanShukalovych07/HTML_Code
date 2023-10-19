@@ -60,7 +60,7 @@
               та висока якість обслуговування!
             </p>
           </div>
-          <img src="./images/baker-man.jpg" alt="чоловік пекар дивиться на батони із посмішкою">
+          <img class="backer-man" src="./images/baker-man.jpg" alt="чоловік пекар дивиться на батони із посмішкою">
         </div>
       </div>
     </section>
@@ -166,22 +166,22 @@
             <h2 class="section-title contact">Приєднуйся до мережі пекарень</h2>
             <p class="modal-text contact">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
             </p>
-            <form name="contact-form" autocomplete="off" novalidate>
+            <form name="contact-form" autocomplete="off">
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user name">Ім'я</label>
-                <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" />
+                <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" required />
               </div>
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required />
               </div>
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-                <input class="form-input" type="email" id="user-email" name="user-email"
-                  placeholder="Електронна пошта" />
+                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
+                  required />
               </div>
               <div class="form-btn">
-                <button type="submit" class="modal-btn-open form">
+                <button type="submit" class="modal-btn-open form" disabled>
                   Замовити дзвінок
                 </button>
               </div>
@@ -256,18 +256,19 @@
       <form name="modal-form" autocomplete="off">
         <div class="form-field">
           <label class="form-label visually-hidden" for="user name">Ім'я</label>
-          <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" />
+          <input class="form-input" type="text" id="user name" name="user-name" placeholder="Ім'я" required />
         </div>
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-          <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+          <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required />
         </div>
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" />
+          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
+            required />
         </div>
         <div class="form-btn">
-          <button type="submit" class="modal-btn-open form">
+          <button type="submit" class="modal-btn-open form" disabled>
             Замовити дзвінок
           </button>
         </div>

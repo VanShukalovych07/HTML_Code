@@ -229,6 +229,15 @@ ul {
     font-weight: 600;
 }
 
+.backer-man {
+    width: 393px;
+    height: 466px;
+    top: 894px;
+    left: 912px;
+    border-top-right-radius: 400px;
+    border-top-left-radius: 400px;
+}
+
 /* .traditions-section-text .limited {
     max-width: 340px;
 } */
@@ -421,8 +430,12 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 32px 0;
+    padding: 8px 0;
     position: relative;
+}
+
+.container.footer {
+    padding: 0;
 }
 
 .footer-container {
@@ -534,7 +547,7 @@ ul {
     padding: 128px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .modal-btn-close {
