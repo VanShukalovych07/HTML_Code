@@ -240,9 +240,19 @@ ul {
     position: relative;
     top: 0px;
     right: -130px;
-    transform: rotate(360deg);
-    /* transform: scale(1.1); */
     transition: 5s;
+    animation-name: main;
+    animation-duration: 2s;
+}
+
+@keyframes main {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .secound-star {
@@ -250,8 +260,23 @@ ul {
     position: relative;
     top: 50px;
     right: -220px;
-    transform: skew();
     transition: 3s;
+    animation-name: secound;
+    animation-duration: 1s;
+}
+
+@keyframes secound {
+    0% {
+        transform: skew(0);
+    }
+
+    30% {
+        transform: skew(0.5);
+    }
+
+    100% {
+        transform: skew(1);
+    }
 }
 
 .last-star {
@@ -259,8 +284,20 @@ ul {
     position: relative;
     top: 250px;
     right: -155px;
-    transform: rotate(-360deg);
     transition: 2s;
+    animation-name: last;
+    animation-duration: 1s;
+
+}
+
+@keyframes last {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .chahges-title {
@@ -627,10 +664,8 @@ ul {
     background-repeat: no-repeat;
     border: none;
     padding: 16px;
-
-
+    cursor: pointer;
 }
-
 
 .modal-title {
     margin: 0;
