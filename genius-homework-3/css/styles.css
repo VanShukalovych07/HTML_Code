@@ -378,6 +378,7 @@ ul {
 
 .adventages-box:hover {
     transform: scale(1.05);
+    cursor: context-menu;
 }
 
 .adventages-box p {
