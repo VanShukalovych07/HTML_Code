@@ -1,0 +1,45 @@
+.contact-container {
+    display: flex;
+    gap: 32px;
+    max-width: 1240px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
+.contact-title {
+    padding-bottom: 96px;
+}
+
+.section-title.contact {
+    margin-bottom: 16px;
+    font-weight: 900;
+    width: 614px;
+}
+
+.modal-text.contact {
+    text-align: left;
+    margin: 0px 0px 42px 0px;
+}
+
+.modal-btn-open.contact {
+    margin-bottom: 16px;
+}
+
+.political-text {
+    color: var(--color-primary-dark);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+.political-link {
+    text-decoration: underline;
+    color: var(--color-primary-dark);
+    font-size: 12 px;
+    font-weight: 400;
+}

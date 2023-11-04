@@ -1,0 +1,47 @@
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+
+
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+
+
+.format-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.section-title.center {
+    text-align: center;
+    color: var(--color-primary-dark);
+}
+
+.formats-title {
+    margin-bottom: 80px;
+
+}
+
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+}
+
+.format-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+}

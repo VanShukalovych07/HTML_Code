@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--color-primary-dark);
+    background-image: url(../images/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8px 0;
+    position: relative;
+}
+
+.container.footer {
+    padding: 0;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
+.social-net {
+    display: flex;
+    gap: 22px;
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+    transition: fill 0.3s;
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
+}
+
+.address-link {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+}
+
+.address-link:hover {
+    color: var(--color-brand-normal);
+}
+
+.address-copyright {
+    color: #a18268;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer::after,
+.footer::before {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.footer::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url(../images/bread\ decour\ small.png);
+}
+
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(../images/bread\ decour\ large.png);
+}
