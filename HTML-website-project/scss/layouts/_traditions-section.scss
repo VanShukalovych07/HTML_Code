@@ -1,23 +1,23 @@
-.traditions-title.section-title {
-    margin-bottom: 42px;
-}
-
-.section-title.center {
-    text-align: center;
-}
-
-.traditions-container {
-    display: flex;
-    gap: 40px;
-}
-
-.traditions-content {
-    justify-content: space-between;
-    max-width: 710px;
-}
-
 .traditions-section {
     padding-top: 96px;
+
+    &__container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__content {
+        justify-content: space-between;
+        max-width: 710px;
+    }
+
+    &__title {
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
 }
 
 .backer-man {
@@ -27,8 +27,4 @@
     left: 912px;
     border-top-right-radius: 400px;
     border-top-left-radius: 400px;
-}
-
-.traditions-section-text {
-    font-size: 18px;
 }
