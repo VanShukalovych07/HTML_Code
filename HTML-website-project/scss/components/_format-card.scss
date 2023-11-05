@@ -11,8 +11,29 @@
     border-radius: 16px;
     max-width: 350px;
     transition: transform 0.3s;
-}
 
-.format-card:hover {
-    transform: scale(1.05);
+    &__:hover {
+        transform: scale(1.05);
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-primary-light);
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--color-primary-light);
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
 }
