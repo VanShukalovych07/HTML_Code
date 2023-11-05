@@ -1,45 +1,37 @@
-.contact-container {
-    display: flex;
-    gap: 32px;
-    max-width: 1240px;
-}
+.contact-section {
+    &__container {
+        display: flex;
+        gap: 32px;
+        max-width: 1240px;
+    }
 
-.contact-map {
-    flex-shrink: 0;
-    border: none;
-    border-radius: 16px;
-}
+    &__map {
+        flex-shrink: 0;
+        border: none;
+        border-radius: 16px;
+    }
 
-.contact-title {
-    padding-bottom: 96px;
-}
+    &__title {
+        margin-bottom: 16px;
+        font-weight: 900;
+        width: 614px;
+    }
 
-.section-title.contact {
-    margin-bottom: 16px;
-    font-weight: 900;
-    width: 614px;
-}
+    &__field {
+        margin-bottom: 24px;
+    }
 
-.modal-text.contact {
-    text-align: left;
-    margin: 0px 0px 42px 0px;
-}
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 16px;
+    }
 
-.modal-btn-open.contact {
-    margin-bottom: 16px;
-}
-
-.political-text {
-    color: var(--color-primary-dark);
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin: 0 auto;
-}
-
-.political-link {
-    text-decoration: underline;
-    color: var(--color-primary-dark);
-    font-size: 12 px;
-    font-weight: 400;
+    &__text {
+        color: var(--color-brand-dark);
+        margin-bottom: 72px;
+        font-size: 18px;
+        text-align: left;
+        margin: 0px 0px 42px 0px;
+    }
 }
