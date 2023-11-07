@@ -12,23 +12,24 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__container">
-        <nav class="header__nav">
-          <a href="./index.html"><img src="./images/logo.svg" alt="логотип сучасної пекарні"></a>
-          <ul class="header__menu">
-            <li><a class=" link" href="#traditions-section">Наші традиції</a></li>
-            <li><a class=" link" href="#cooker-section">Шеф-кухарі</a></li>
-            <li><a class=" link" href="#format-section">Формати</a></li>
-            <li><a class=" link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="header__button modal-btn-open">Замовити дзвінок</button>
-        <button type="button" class="header__burger">
-          <svg width="24" height="24">
-            <use href="./images/icons.svg#icon-burger_menu1"> </use>
-          </svg>
-        </button>
+    <div class="header__container">
+      <nav class="header__nav">
+        <a href="./index.html"><img src="./images/logo.svg" alt="логотип сучасної пекарні"></a>
+        <ul class="header__menu">
+          <li><a class=" link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class=" link" href="#cooker-section">Шеф-кухарі</a></li>
+          <li><a class=" link" href="#format-section">Формати</a></li>
+          <li><a class=" link" href="#contact-section">Контакти</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button modal-btn-open">Замовити дзвінок</button>
+      <button type="button" class="header__burger menu-btn-open">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-burger_menu1"> </use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <button type="button" class="mobile-menu__btn-close menu-btn-close">close</button>
       </div>
     </div>
   </header>
@@ -37,6 +38,7 @@
       <div class="container">
         <h1 class="hero-section__title"> <span class="text-brand">Сучасна</span> пекарня</h1>
       </div>
+      <button type="button" class="hero-section__button modal-btn-open">Замовити дзвінок</button>
     </section>
     <section class="adventages-section"> <!-- 2.1 -->
       <div class="adventages-container">
@@ -63,7 +65,8 @@
               та висока якість обслуговування!
             </p>
           </div>
-          <img class="backer-man" src="./images/baker-man.jpg" alt="чоловік пекар дивиться на батони із посмішкою">
+          <img class="traditions-section__image" srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+            src="./images/baker-man.jpg" alt="чоловік пекар дивиться на батони із посмішкою">
         </div>
       </div>
     </section>
@@ -284,6 +287,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/moblie-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

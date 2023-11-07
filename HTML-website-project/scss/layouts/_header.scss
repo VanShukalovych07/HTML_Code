@@ -3,12 +3,17 @@
   top: 0px;
   left: 0;
   width: 100%;
-  padding-top: 12px;
+  padding-top: 16px;
+
+  @media screen and (min-width: $br-desctop) {
+    padding-top: 32px;
+  }
 
   &__container {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 0px 24px;
   }
 
   &__nav {
@@ -21,7 +26,6 @@
     display: none;
 
     @media screen and (min-width: $br-desctop) {
-
       display: flex;
       gap: 64px;
       flex-grow: 1;
@@ -32,13 +36,19 @@
   &__button {
     display: none;
 
-    @media screen and (min-width:$br-desctop) {}
+    @media screen and (min-width:$br-desctop) {
+      display: flex;
+    }
   }
 
   &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
 
-    @media screen and (max-width: $br-desctop) {
+    @media screen and (min-width: $br-desctop) {
       display: none;
+
     }
   }
 }

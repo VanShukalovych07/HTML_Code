@@ -1,8 +1,14 @@
 .traditions-section {
-    padding-top: 96px;
+    padding-top: 40px;
+
+    @media screen and (min-width:$br-tablet) {
+        padding-top: 96px;
+    }
 
     &__container {
         display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
         gap: 40px;
     }
 
@@ -18,13 +24,13 @@
     &__text {
         font-size: 18px;
     }
-}
 
-.backer-man {
-    width: 393px;
-    height: 466px;
-    top: 894px;
-    left: 912px;
-    border-top-right-radius: 400px;
-    border-top-left-radius: 400px;
+    &__image {
+        display: none;
+        border-radius: 400px 400px 0px 0px;
+
+        @media screen and (min-width:$br-tablet) {
+            display: block;
+        }
+    }
 }
