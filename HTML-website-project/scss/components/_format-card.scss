@@ -11,12 +11,6 @@
     padding: 24px;
     border-radius: 16px;
     max-width: 350px;
-    transition: transform 0.3s;
-
-
-    &:hover {
-        transform: scale(1.05);
-    }
 
     &__title {
         font-size: 24px;

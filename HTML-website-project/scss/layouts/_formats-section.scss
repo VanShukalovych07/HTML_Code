@@ -1,23 +1,29 @@
 .formats-section {
-    &__container {
+    &__slider {
         display: flex;
         gap: 32px;
         align-items: center;
     }
 
-    &__list {
-        display: flex;
-        gap: 20px;
-        /* flex-wrap: wrap; */
-    }
-
-    &__item {
-        flex-basis: calc((100% - 40px) / 3);
+    &__container {
+        overflow: hidden;
     }
 
     &__title {
         margin-bottom: 80px;
         text-align: center;
         color: var(--color-primary-dark);
+    }
+
+    &__list {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $br-tablet) {
+            display: flex;
+        }
     }
 }

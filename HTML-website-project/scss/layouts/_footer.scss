@@ -6,84 +6,93 @@
     background-position: center;
     padding: 8px 0;
     position: relative;
-}
+    text-align: center;
 
-.container.footer {
-    padding: 0;
-}
+    &::after,
+    &::before {
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        content: "";
+    }
 
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
+    &::before {
+        width: 180px;
+        height: 120px;
+        left: 0;
+        background-image: url(../images/bread\ decour\ small.png);
+    }
 
-.footer-nav,
-.footer-address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
+    &::after {
+        width: 380px;
+        height: 190px;
+        right: 0;
+        background-image: url(../images/bread\ decour\ large.png);
+    }
 
-.footer-logo,
-.footer-menu {
-    flex-grow: 1;
-}
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
 
-.address-list,
-.address-info {
-    flex-grow: 1;
-}
+        @media screen and (min-width: $br-tablet) {
+            gap: 20px;
+            flex-direction: row;
+        }
+    }
 
-.social-net {
-    display: flex;
-    gap: 22px;
-}
+    &__nav,
+    &__address {
+        display: flex;
+        flex-direction: column;
 
-.address-icon {
-    fill: var(--color-primary-light);
-    transition: fill 0.3s;
-}
+        gap: 20px;
 
-.address-icon:hover {
-    fill: var(--color-brand-normal);
-}
+        @media screen and (min-width: $br-tablet) {
+            text-align: left;
+            flex-basis: 50%;
+            flex-direction: row;
+        }
+    }
 
-.address-link {
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--color-primary-light);
-    transition: color 0.3s;
-}
+    &__logo,
+    &__menu,
+    &__list,
+    &__info {
+        flex-grow: 1;
+    }
 
-.address-link:hover {
-    color: var(--color-brand-normal);
-}
+    &__net {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+    }
 
-.address-copyright {
-    color: #a18268;
-    font-size: 14px;
-    font-weight: 400;
-}
+    &__icon {
+        fill: var(--color-primary-light);
+        transition: fill 0.3s;
 
-.footer::after,
-.footer::before {
-    position: absolute;
-    bottom: 0;
-    background-repeat: no-repeat;
-    content: "";
-}
+        &:hover {
+            fill: var(--color-brand-normal);
+        }
+    }
 
-.footer::before {
-    width: 180px;
-    height: 120px;
-    left: 0;
-    background-image: url(../images/bread\ decour\ small.png);
-}
 
-.footer::after {
-    width: 380px;
-    height: 190px;
-    right: 0;
-    background-image: url(../images/bread\ decour\ large.png);
+    &__link {
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--color-primary-light);
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--color-brand-normal);
+        }
+    }
+
+    &__copyright {
+        color: #a18268;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }

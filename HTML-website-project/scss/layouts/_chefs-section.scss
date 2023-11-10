@@ -2,17 +2,25 @@
     &__title {
         position: relative;
         margin: 0 auto;
-        margin-bottom: 80px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width:$br-desctop) {
+            margin-bottom: 80px;
+        }
 
         &::before,
         &::after {
             position: absolute;
             bottom: 24px;
-            display: block;
+            display: none;
             width: 352px;
             height: 0px;
             border: 2px solid var(--color-brand-light);
             content: "";
+
+            @media screen and (min-width:$br-desctop) {
+                display: block;
+            }
         }
 
         &::before {
@@ -28,11 +36,18 @@
 
     &__list {
         display: flex;
-        gap: 40px 30px;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width:$br-tablet) {
+            gap: 40px 30px;
+            flex-direction: row;
+        }
     }
 
     &__item {
-        display: flex;
-        flex-basis: calc(100% - 30px / 2);
+        @media screen and (min-width:$br-tablet) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
     }
 }
