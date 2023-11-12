@@ -1,0 +1,66 @@
+.stars {
+    &__main-star {
+        fill: var(--color-primary-dark);
+        position: relative;
+        top: 0px;
+        right: -130px;
+        transition: 5s;
+        animation-name: main;
+        animation-duration: 2s;
+    }
+
+    @keyframes main {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__secound-star {
+        fill: var(--color-primary-blue);
+        position: relative;
+        top: 50px;
+        right: -220px;
+        transition: 3s;
+        animation-name: secound;
+        animation-duration: 1s;
+    }
+
+    @keyframes secound {
+        0% {
+            transform: skew(0);
+        }
+
+        30% {
+            transform: skew(0.5);
+        }
+
+        100% {
+            transform: skew(1);
+        }
+    }
+
+    &__last-star {
+        fill: var(--secoundary-color-light-grey);
+        position: relative;
+        top: 250px;
+        right: -155px;
+        transition: 2s;
+        animation-name: last;
+        animation-duration: 1s;
+
+    }
+
+    @keyframes last {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+}
