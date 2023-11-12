@@ -1,0 +1,63 @@
+.backdrop {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 20px 0;
+    background-color: rgba(1, 31, 74, 0.4);
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 723px;
+    height: 100%;
+    max-height: 700px;
+    padding: 42px 144px;
+    background-color: var(--color-primary-dark);
+    border-radius: 48px;
+    /* overflow-y: auto; */
+}
+
+.modal-btn-close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 42px;
+    right: 26px;
+    background-image: url(../images/btn-close.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.modal-title {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--color-primary-light);
+}
+
+.for-free.modal-text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+}

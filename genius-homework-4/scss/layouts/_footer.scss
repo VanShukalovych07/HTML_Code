@@ -1,0 +1,83 @@
+.footer {
+    position: relative;
+    background-color: var(--color-primary-dark);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 186px;
+    padding: 32px 0px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 186px;
+}
+
+.contact-link-footer {
+    margin-bottom: 0;
+}
+
+.footer-address {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 186px;
+}
+
+.footer-icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-footer-icon {
+    fill: var(--color-primary-light);
+}
+
+.link-footer {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: 0.2s;
+}
+
+.link-footer:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+}
+
+.link-footer.contact-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.link-footer.contact-link:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.address-copyright {
+    font-size: 13px;
+    color: var(--secoundary-color-light-grey);
+    margin-bottom: 0;
+}
+
+.footer::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    content: '';
+    width: 278px;
+    height: 213px;
+    right: -31px;
+    bottom: -60px;
+    background-image: url(../images/footer-decour-bottles.png);
+}

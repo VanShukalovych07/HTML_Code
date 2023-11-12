@@ -1,0 +1,115 @@
+.changes-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 32px;
+}
+
+.changes-all-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 709px;
+    margin-bottom: 199px;
+}
+
+.woman-photo-and-stars {
+    display: flex;
+    align-items: top left;
+    flex-wrap: wrap;
+    max-width: 499px;
+    gap: 40px;
+
+}
+
+.main-star {
+    fill: var(--color-primary-dark);
+    position: relative;
+    top: 0px;
+    right: -130px;
+    transition: 5s;
+    animation-name: main;
+    animation-duration: 2s;
+}
+
+@keyframes main {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.secound-star {
+    fill: var(--color-primary-blue);
+    position: relative;
+    top: 50px;
+    right: -220px;
+    transition: 3s;
+    animation-name: secound;
+    animation-duration: 1s;
+}
+
+@keyframes secound {
+    0% {
+        transform: skew(0);
+    }
+
+    30% {
+        transform: skew(0.5);
+    }
+
+    100% {
+        transform: skew(1);
+    }
+}
+
+.last-star {
+    fill: var(--secoundary-color-light-grey);
+    position: relative;
+    top: 250px;
+    right: -155px;
+    transition: 2s;
+    animation-name: last;
+    animation-duration: 1s;
+
+}
+
+@keyframes last {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.chahges-title {
+    margin-bottom: 40px;
+}
+
+.first-changes-text {
+    margin-bottom: 40px;
+}
+
+.secound-changes-text {
+    margin: 0;
+}
+
+.changes-text {
+    color: var(--color-primary-blue);
+    text-transform: capitalize;
+}
+
+.fotos-womans-changes {
+    border-radius: 50%;
+    position: relative;
+}
+
+.fotos-womans-changes.after {
+    position: relative;
+    right: -168px;
+}

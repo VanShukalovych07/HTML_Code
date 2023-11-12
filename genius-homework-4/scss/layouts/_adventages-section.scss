@@ -1,0 +1,43 @@
+.adventages-title {
+    text-align: center;
+}
+
+.adventages-text {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+}
+
+.adventages-boxes {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 56px;
+}
+
+.adventages-icon {
+    fill: var(--color-primary-blue);
+    margin: 2px 102px 8px 102px;
+}
+
+.adventages-box {
+    height: 444px;
+    background-color: var(--color-primary-light);
+    padding: 32px;
+    border-radius: 32px;
+    max-width: 316px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px #A8C6F561;
+    transition: 0.2s;
+}
+
+.adventages-box:hover {
+    transform: scale(1.05);
+    cursor: context-menu;
+}
+
+.adventages-box p {
+    margin-bottom: 4px;
+}

@@ -1,0 +1,43 @@
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding-top: 8px;
+    background-color: #FFFFFF40;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 240px;
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 56px;
+}
+
+.contact-header {
+    display: flex;
+    flex-grow: 1;
+}
+
+.contact-icons-header {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-header-icon {
+    fill: var(--color-primary-dark);
+}
