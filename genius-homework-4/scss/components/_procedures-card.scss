@@ -1,0 +1,35 @@
+.procedures-card {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 456px;
+    width: 344px;
+    background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%);
+    padding: 24px;
+    border: 1px solid transparent;
+    border-radius: 4px 120px;
+    max-width: 350px;
+    margin-bottom: 32px;
+
+    &__title {
+        color: var(--color-primary-light);
+        line-height: 1.2;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    &--mask {
+        background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%), url(../images/massage\ face.svg);
+    }
+
+    &--iniection {
+        background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%), url(../images/iniection.svg);
+    }
+
+    &--clean {
+        background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--color-primary-dark) 101.39%), url(../images/clean\ skin.svg);
+    }
+}

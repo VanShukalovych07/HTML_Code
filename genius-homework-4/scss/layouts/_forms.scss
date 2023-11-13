@@ -1,62 +1,21 @@
-.button-free.form {
-    margin: 0 auto;
-    margin-bottom: 8px;
-}
-
-.form-label.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.form-input {
-    padding: 18px 33px;
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.17;
-    border: 2px solid var(--secoundary-color-light-grey);
-    border-radius: 32px;
-    background-color: transparent;
-}
-
-.form-input::placeholder {
-    color: var(--color-primary-light);
-    font-size: 13px;
-}
-
-.form-label {
-    display: block;
-    width: 100%;
-}
-
-.form-field {
-    margin-bottom: 24px;
-    height: 52px;
-}
-
-.form-input:focus {
-    background-color: var(--secoundary-color-light-grey);
-    outline: none;
-}
-
-.form-input:focus::placeholder {
-    color: var(--color-primary-light);
-}
-
 .form-btn {
     display: flex;
     justify-content: center;
     margin: 0 auto 8px;
 }
 
-.political-text.form {
+.form-terms {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     max-width: 225px;
     margin: 0 auto;
+    color: var(--secoundary-color-light-grey);
+    margin-bottom: 0;
+
+    &--link {
+        text-decoration: underline;
+        color: var(--secoundary-color-light-grey);
+    }
 }

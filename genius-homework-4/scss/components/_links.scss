@@ -3,9 +3,9 @@
     font-size: 18px;
     text-decoration: none;
     transition: 0.2s;
-}
 
-.link:hover {
-    color: var(--color-primary-blue);
-    font-weight: 700;
+    &:hover {
+        color: var(--color-primary-blue);
+        font-weight: 700;
+    }
 }

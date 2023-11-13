@@ -1,0 +1,7 @@
+.text-blue {
+    color: var(--color-primary-blue);
+
+    &--capitalise {
+        text-transform: capitalize;
+    }
+}
