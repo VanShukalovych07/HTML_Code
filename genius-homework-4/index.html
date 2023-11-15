@@ -220,10 +220,10 @@
                                 <input class="input__control" type="email" id="user-email" name="user-email"
                                     placeholder="Ваша електронна пошта" required />
                             </div>
-                            <button type="submit" class="modal-btn-open form-btn contact-section__button">Записатись
+                            <button type="submit" class="modal-btn-open form__btn contact-section__button">Записатись
                                 безкоштовно</button>
-                            <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms--link" href="#"
-                                    target="blank"> з політикою
+                            <p class="form__terms">Натискаючи на кнопку я погоджуюсь <a class="form__terms--link"
+                                    href="#" target="blank"> з політикою
                                     конфіденційності</a></p>
                         </form>
                     </div>
@@ -232,86 +232,83 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <nav class="footer-nav">
-                    <a class="footer-logo" href="./index.html"><img src="./images/logo.svg" alt="beautyzone"></a>
-                    <ul class="footer-nav-list">
-                        <li><a class=" link-footer" href="#changes-section">Про нас</a></li>
-                        <li><a class=" link-footer" href="#adventages-section">Чому ми</a></li>
-                        <li><a class=" link-footer" href="#procedures-section">Наші процедури</a></li>
-                        <li><a class=" link-footer contact-link" href="#contact-section">Контакти</a></li>
-                    </ul>
-                </nav>
-                <address class="footer-address">
-                    <ul class="footer-contact-list">
-                        <li><a class="link-footer" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                        <li><a class="link-footer" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                        <li><a class="link-footer" href="https://maps.app.goo.gl/K4wTo7F4cDq2fTwHA"
-                                target="blank">Україна,
-                                м. Київ, <br>
-                                вул. Тараса Шевченка 5</a>
-                        </li>
-                        <div class="footer-icons-list">
-                            <li>
-                                <a href="tel:+380960000007">
-                                    <svg class="contact-footer-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-phone"> </use>
-                                    </svg>
-                                </a>
-                            </li> <!-- telefon icon -->
+        <div class="footer__container">
+            <nav class="footer__nav">
+                <a class="footer__logo" href="./index.html"><img src="./images/logo.svg" alt="beautyzone"></a>
+                <ul class="footer__nav-list">
+                    <li><a class=" footer__link" href="#changes-section">Про нас</a></li>
+                    <li><a class=" footer__link" href="#adventages-section">Чому ми</a></li>
+                    <li><a class=" footer__link" href="#procedures-section">Наші процедури</a></li>
+                    <li><a class=" footer__link footer__link--last" href="#contact-section">Контакти</a></li>
+                </ul>
+            </nav>
+            <address class="footer__address">
+                <ul class="footer__contact-list">
+                    <li><a class="footer__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                    <li><a class="footer__link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                    <li><a class="footer__link" href="https://maps.app.goo.gl/K4wTo7F4cDq2fTwHA" target="blank">Україна,
+                            м. Київ, <br>
+                            вул. Тараса Шевченка 5</a>
+                    </li>
+                    <div class="footer__icons-list">
+                        <li>
+                            <a href="tel:+380960000007">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-phone"> </use>
+                                </svg>
+                            </a>
+                        </li> <!-- telefon icon -->
 
-                            <li>
-                                <a href="#">
-                                    <svg class="contact-footer-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-facefook"> </use>
-                                    </svg>
-                                </a>
-                            </li> <!--facefook icon -->
-                            <li>
-                                <a href="#">
-                                    <svg class="contact-footer-icon" width="32" height="32">
-                                        <use href="./images/icons.svg#icon-instagram"> </use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </div>
-                    </ul>
-                    <div>
-                        <a class="link-footer" href="#" target="blank"> Політика конфіденційності</a>
-                        <p class="address-copyright"> &copy; 2022 Дані захищені</p>
+                        <li>
+                            <a href="#">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-facefook"> </use>
+                                </svg>
+                            </a>
+                        </li> <!--facefook icon -->
+                        <li>
+                            <a href="#">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-instagram"> </use>
+                                </svg>
+                            </a>
+                        </li>
                     </div>
-                </address>
-            </div>
+                </ul>
+                <div>
+                    <a class="footer__link" href="#" target="blank"> Політика конфіденційності</a>
+                    <p class="footer__address-copyright"> &copy; 2022 Дані захищені</p>
+                </div>
+            </address>
         </div>
     </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
             <button type="button" class="modal-btn-close">
             </button>
-            <h2 class="modal-title">Замовити дзвінок</h2>
-            <h3 class="for-free modal-text">Запишіться <span class="free">безкоштовно</span> <br>
+            <h2 class="modal__title">Замовити дзвінок</h2>
+            <h3 class="modal__text">Запишіться <span class="text-blue">безкоштовно</span> <br>
                 та отримайте подарунок
             </h3>
             <form name="modal-form" autocomplete="off">
-                <div class="form-field">
-                    <label class="form-label visually-hidden" for="user name">Ім'я</label>
-                    <input class="form-input" type="text" id="user name" name="user-name"
+                <div class="form__field input">
+                    <label class="input__label visually-hidden" for="user name">Ім'я</label>
+                    <input class="input__control" type="text" id="user name" name="user-name"
                         placeholder="Ваше ім'я та прізвище" required pattern="^[A-Za-zА-Яа-яЁё]+\s[A-Za-zА-Яа-яЁё]+$" />
                 </div>
-                <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
-                        required pattern="^\+[0-9]{12}" />
+                <div class="form__field input">
+                    <label class="input__label visually-hidden" for="user-tel">Телефон</label>
+                    <input class="input__control" type="tel" id="user-tel" name="user-tel"
+                        placeholder="Ваш номер телефону" required pattern="^\+[0-9]{12}" />
                 </div>
-                <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-email">лектронна пошта</label>
-                    <input class="form-input" type="email" id="user-email" name="user-email"
+                <div class="form__field input">
+                    <label class="input__label visually-hidden" for="user-email">лектронна пошта</label>
+                    <input class="input__control" type="email" id="user-email" name="user-email"
                         placeholder="Ваша електронна пошта" required />
                 </div>
-                <button type="submit" class="button-free form-btn">Записатись безкоштовно</button>
-                <p class="political-text form">Натискаючи на кнопку я погоджуюсь з <br> <a class="political-link"
-                        href="#" target="blank">
+                <button type="submit" class="button-free form__btn">Записатись безкоштовно</button>
+                <p class="form__terms">Натискаючи на кнопку я погоджуюсь з <br> <a class="form__terms--link" href="#"
+                        target="blank">
                         політикою конфіденційності</a></p>
                 <script src="./js/modal.js"></script>
         </div>

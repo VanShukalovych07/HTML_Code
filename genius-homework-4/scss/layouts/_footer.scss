@@ -1,83 +1,73 @@
 .footer {
     position: relative;
     background-color: var(--color-primary-dark);
-}
 
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 186px;
-    padding: 32px 0px;
-}
+    &::after {
+        position: absolute;
+        background-repeat: no-repeat;
+        content: '';
+        width: 278px;
+        height: 213px;
+        right: -31px;
+        bottom: -60px;
+        background-image: url(../images/footer-decour-bottles.png);
+    }
 
-.footer-nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 186px;
-}
+    &__container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: calc((100% - 200px) / 4);
+        padding: 56px 100px;
+    }
 
-.contact-link-footer {
-    margin-bottom: 0;
-}
+    &__nav {
+        display: flex;
+        align-items: start;
+        flex-grow: 1;
+        gap: 50%;
+    }
 
-.footer-address {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 186px;
-}
+    &__link {
+        color: var(--color-primary-light);
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 16px;
+        transition: 0.2s;
+        width: 100%;
+        min-width: 180px;
 
-.footer-icons-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
 
-.contact-footer-icon {
-    fill: var(--color-primary-light);
-}
+        &:hover {
+            color: var(--color-primary-blue);
+            font-weight: 700;
+        }
 
-.link-footer {
-    color: var(--color-primary-light);
-    font-size: 16px;
-    text-decoration: none;
-    margin-bottom: 16px;
-    transition: 0.2s;
-}
+        &--last {
+            margin-bottom: 0;
+        }
+    }
 
-.link-footer:hover {
-    color: var(--color-primary-blue);
-    font-weight: 700;
-}
+    &__address {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        gap: 50%;
+    }
 
-.link-footer.contact-link {
-    color: var(--color-primary-light);
-    font-size: 16px;
-    text-decoration: none;
-    margin-bottom: 0px;
-}
+    &__icons-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
 
-.link-footer.contact-link:hover {
-    color: var(--color-primary-blue);
-    font-weight: 700;
-    transition: 0.2s;
-}
+    &__icon {
+        fill: var(--color-primary-light);
+    }
 
-.address-copyright {
-    font-size: 13px;
-    color: var(--secoundary-color-light-grey);
-    margin-bottom: 0;
-}
-
-.footer::after {
-    position: absolute;
-    background-repeat: no-repeat;
-    content: '';
-    width: 278px;
-    height: 213px;
-    right: -31px;
-    bottom: -60px;
-    background-image: url(../images/footer-decour-bottles.png);
+    &__address-copyright {
+        font-size: 13px;
+        color: var(--secoundary-color-light-grey);
+        margin-bottom: 0;
+    }
 }

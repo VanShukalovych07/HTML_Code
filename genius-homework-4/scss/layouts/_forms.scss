@@ -1,21 +1,28 @@
-.form-btn {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 8px;
-}
+.form {
+    &__field {
+        margin-bottom: 24px;
+        height: 52px;
+    }
 
-.form-terms {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-    max-width: 225px;
-    margin: 0 auto;
-    color: var(--secoundary-color-light-grey);
-    margin-bottom: 0;
-
-    &--link {
-        text-decoration: underline;
+    &__terms {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        max-width: 225px;
+        margin: 0 auto;
         color: var(--secoundary-color-light-grey);
+        margin-bottom: 0;
+
+        &--link {
+            text-decoration: underline;
+            color: var(--secoundary-color-light-grey);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 8px;
     }
 }
