@@ -3,22 +3,25 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FFFFFF40;
+    background-color: #05010140; // remove
 
     &__container {
         display: flex;
         align-items: center;
         flex-grow: 1;
-        gap: 240px;
+        gap: calc((100% - 200px) / 4);
         padding: 32px 100px;
     }
 
     &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
+        display: none;
 
+        @media screen and (min-width: $br-tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
     }
 
     &__list {
@@ -26,5 +29,18 @@
         gap: 56px;
     }
 
+    &__contacts-list {
+        display: none;
 
+        @media screen and (min-width: $br-tablet) {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            gap: 33%;
+        }
+    }
+
+    &__contacts-icon {
+        fill: var(--color-primary-dark);
+    }
 }

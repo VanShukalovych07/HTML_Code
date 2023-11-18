@@ -37,6 +37,7 @@
 }
 
 .menu-btn-open {
+    display: block;
     position: absolute;
     top: 16px;
     right: 16px;
@@ -44,4 +45,6 @@
     fill: var(--color-primary-light);
     background-color: transparent;
     border: none;
+
+
 }
