@@ -5,12 +5,22 @@
     width: 100%;
     background-color: #05010140; // remove
 
+
     &__container {
         display: flex;
         align-items: center;
-        flex-grow: 1;
-        gap: calc((100% - 200px) / 4);
-        padding: 32px 100px;
+        padding: 16px 16px 25px 20px;
+
+        @media screen and (min-width: $br-tablet) {
+            flex-grow: 1;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            padding: 32px 100px;
+            gap: 240px;
+        }
     }
 
     &__nav {
@@ -20,13 +30,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-grow: 1;
         }
     }
 
     &__list {
         display: flex;
-        gap: 56px;
+
+        @media screen and (min-width: $br-tablet) {
+            gap: 34px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            gap: 56px;
+        }
     }
 
     &__contacts-list {
@@ -34,13 +50,17 @@
 
         @media screen and (min-width: $br-tablet) {
             display: flex;
-            flex-grow: 1;
-            flex-direction: row;
-            gap: 33%;
+            align-items: center;
+            gap: 24px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            gap: 32px;
         }
     }
 
     &__contacts-icon {
         fill: var(--color-primary-dark);
+
     }
 }
