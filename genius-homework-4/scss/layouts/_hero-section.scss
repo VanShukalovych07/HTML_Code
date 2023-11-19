@@ -2,34 +2,74 @@
     background-image: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/background-foto-pg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 98px;
+    padding-top: 71px;
+
+    @media screen and (min-width: $br-tablet) {
+        padding-top: 98px;
+    }
 
     &__container {
-        padding-left: 206px;
+        @media screen and (min-width: $br-tablet) {
+            padding-left: 170px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            padding-left: 206px;
+        }
     }
 
     &__cosmetical-text {
-        font-size: 18px;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0px;
+
+        @media screen and (min-width: $br-tablet) {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 16px;
+        }
     }
 
     &__title {
         color: var(--color-primary-blue);
         font-family: 'Play', sans-serif;
-        text-align: left;
-        font-size: 140px;
+        text-align: center;
+        font-size: 54px;
         font-weight: 700;
-        line-height: 114px;
+        line-height: 46px;
         text-transform: capitalize;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $br-tablet) {
+            width: 100%;
+            max-width: 530px;
+            text-align: left;
+            font-size: 140px;
+            line-height: 114px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: $br-tablet) {
+            display: block;
+        }
     }
 
     &__consultation-text {
-        font-size: 12px;
-        margin-bottom: 3px;
-    }
+        text-align: center;
+        font-size: 11px;
+        line-height: 18px;
+        margin-bottom: 0;
 
-    &__consultations-text {
-        font-size: 12px;
-        margin: 0;
+        @media screen and (min-width: $br-tablet) {
+            text-align: left;
+            font-size: 12px;
+            line-height: 1.5;
+        }
     }
 }

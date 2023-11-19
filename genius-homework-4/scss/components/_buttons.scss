@@ -18,16 +18,25 @@
 }
 
 .modal-btn-open {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--color-primary-light);
     border: 2px solid var(--color-primary-blue);
     background-color: var(--color-primary-blue);
-    border-radius: 32px;
+    border-radius: 24px;
     cursor: pointer;
-    padding: 16px 32px;
-    margin-bottom: 14px;
+    padding: 12px 24px;
+    margin-bottom: 8px;
     transition: 0.2s;
+    max-width: 210px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        border-radius: 32px;
+        padding: 16px 32px;
+        margin-bottom: 14px;
+        max-width: 240px;
+    }
 
     &:hover {
         background-color: transparent;

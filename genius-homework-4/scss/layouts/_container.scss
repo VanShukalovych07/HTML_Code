@@ -2,6 +2,10 @@
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 12px;
     justify-content: center;
+
+    @media screen and (min-width: $br-desktop) {
+        padding: 24px;
+    }
 }

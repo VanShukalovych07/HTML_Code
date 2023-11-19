@@ -2,11 +2,27 @@
     &__main-star {
         fill: var(--color-primary-dark);
         position: relative;
-        top: 0px;
-        right: -130px;
-        transition: 5s;
+        top: -70px;
+        right: -330px;
+        transition: 3s;
         animation-name: main;
         animation-duration: 2s;
+        width: 40px;
+        height: 40px;
+
+        @media screen and (min-width: $br-tablet) {
+            width: 50px;
+            height: 50px;
+            top: -400px;
+            right: -540px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            width: 64px;
+            height: 64px;
+            top: -400px;
+            right: -750px;
+        }
     }
 
     @keyframes main {
@@ -20,13 +36,31 @@
     }
 
     &__secound-star {
+        display: none;
         fill: var(--color-primary-blue);
         position: relative;
-        top: 50px;
-        right: -220px;
+        top: -630px;
+        right: -1150px;
         transition: 3s;
         animation-name: secound;
         animation-duration: 1s;
+
+        @media screen and (min-width: $br-tablet) {
+            width: 32px;
+            height: 32px;
+            display: block;
+            top: -560px;
+            right: -805px;
+
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            width: 40px;
+            height: 40px;
+            top: -630px;
+            right: -1150px;
+        }
+
     }
 
     @keyframes secound {
@@ -44,14 +78,23 @@
     }
 
     &__last-star {
+        display: none;
         fill: var(--secoundary-color-light-grey);
         position: relative;
-        top: 250px;
-        right: -155px;
+        top: -420px;
+        right: -1130px;
         transition: 2s;
         animation-name: last;
         animation-duration: 1s;
 
+        @media screen and (min-width: $br-tablet) {
+            display: block;
+            right: -800px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            right: -1130px;
+        }
     }
 
     @keyframes last {

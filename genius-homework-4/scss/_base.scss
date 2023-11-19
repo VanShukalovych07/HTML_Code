@@ -30,10 +30,15 @@ a {
 body {
     color: var(--color-primary-dark);
     font-family: 'Roboto';
-    font-size: 22px;
     font-weight: 400;
     margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
 
+    @media screen and (min-width: 1280px) {
+        font-size: 22px;
+        line-height: 1.7;
+    }
 }
 
 address {
@@ -46,9 +51,9 @@ ul {
     padding: 0;
 }
 
-// img {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-//     object-fit: cover;
-// }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
