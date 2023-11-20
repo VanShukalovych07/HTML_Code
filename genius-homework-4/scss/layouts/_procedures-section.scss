@@ -1,5 +1,5 @@
 .procedures-section {
-    &__container {
+    &__slider {
         display: flex;
         flex-grow: 1;
         justify-content: center;
@@ -7,13 +7,16 @@
         align-items: center;
     }
 
-    &__title {
-        text-align: center;
-    }
+    &__container {
 
-    &__list {
-        display: flex;
-        gap: 16px;
-        flex-wrap: nowrap;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__list {
+            display: flex;
+            gap: 16px;
+        }
     }
 }

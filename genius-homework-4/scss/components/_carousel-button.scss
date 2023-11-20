@@ -14,10 +14,15 @@
     transition: 0.2s;
 
     &:hover {
+        display: none;
         background-color: var(--color-primary-blue);
         fill: var(--color-primary-light);
         border: 2px solid var(--color-primary-light);
         border-radius: 50%;
+
+        @media screen and (min-width: $br-tablet) {
+            display: block;
+        }
     }
 
     &--rotation {

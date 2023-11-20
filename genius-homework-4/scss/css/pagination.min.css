@@ -1,0 +1,1 @@
+.pagination{display:flex;align-items:center;justify-content:center;gap:24px}.pagination__button{width:11px;height:11px;padding:0;background-color:var(--secoundary-color-light-grey);border-radius:50%;border-color:none}.pagination__button--active{background-color:var(--color-primary-blue)}/*# sourceMappingURL=pagination.min.css.map */
