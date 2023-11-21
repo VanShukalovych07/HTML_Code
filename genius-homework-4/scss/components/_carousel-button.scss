@@ -1,5 +1,5 @@
 .carousel-button {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -13,16 +13,15 @@
     cursor: pointer;
     transition: 0.2s;
 
+    @media screen and (min-width: $br-tablet) {
+        display: flex;
+    }
+
     &:hover {
-        display: none;
         background-color: var(--color-primary-blue);
         fill: var(--color-primary-light);
         border: 2px solid var(--color-primary-light);
         border-radius: 50%;
-
-        @media screen and (min-width: $br-tablet) {
-            display: block;
-        }
     }
 
     &--rotation {

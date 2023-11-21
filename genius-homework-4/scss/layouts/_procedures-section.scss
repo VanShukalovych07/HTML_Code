@@ -8,13 +8,14 @@
     &__container {
         overflow: hidden;
 
-        &__title {
-            text-align: center;
-        }
-
         &__list {
             display: flex;
             gap: 16px;
         }
     }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }

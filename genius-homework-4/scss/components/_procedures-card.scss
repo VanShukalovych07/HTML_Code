@@ -12,6 +12,11 @@
     border-radius: 4px 120px;
     margin-bottom: 32px;
 
+    @media screen and (min-width: $br-tablet) {
+        height: 365px;
+        width: 280px;
+    }
+
     &__title {
         color: var(--color-primary-light);
         line-height: 1.2;
