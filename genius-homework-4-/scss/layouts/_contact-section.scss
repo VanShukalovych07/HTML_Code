@@ -1,9 +1,19 @@
 .contact-section {
     &__container {
+        width: 100%;
+        max-width: 1288px;
+        margin: 0 auto;
+        padding: 0;
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 24px;
+
+        @media screen and (min-width: $br-tablet) {
+            flex-direction: row;
+            gap: 32px;
+        }
     }
 
     &__title {
@@ -12,21 +22,31 @@
 
     &__map {
         width: 100%;
-        height: 481px;
-        max-width: 605px;
-        border-radius: 32px;
+        height: 232px;
+        margin: 0 -20px;
+
+        @media screen and (min-width: $br-tablet) {
+            height: 481px;
+            max-width: 605px;
+            border-radius: 32px;
+            margin: 0;
+        }
     }
 
     &__box {
         text-align: center;
         height: 482px;
         background-color: var(--color-primary-dark);
-        padding: 48px 57px;
+        padding: 42px 24px;
         border: 1px solid transparent;
         border-radius: 32px;
         width: 100%;
         max-width: 423px;
-        margin: 0;
+        margin: 0 20px;
+
+        @media screen and (min-width: $br-desktop) {
+            padding: 48px 57px;
+        }
     }
 
     &__field {
@@ -38,7 +58,11 @@
         color: var(--color-primary-light);
         font-weight: 600;
         font-size: 22px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $br-desktop) {
+            margin-bottom: 32px;
+        }
 
     }
 
