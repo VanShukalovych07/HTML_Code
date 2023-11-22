@@ -35,17 +35,19 @@
 
     &__box {
         text-align: center;
-        height: 482px;
+        height: 460px;
         background-color: var(--color-primary-dark);
-        padding: 42px 24px;
+        padding: 42px 23px;
         border: 1px solid transparent;
         border-radius: 32px;
         width: 100%;
-        max-width: 423px;
+        max-width: 320px;
         margin: 0 20px;
 
         @media screen and (min-width: $br-desktop) {
             padding: 48px 57px;
+            max-width: 423px;
+            height: 482px;
         }
     }
 
