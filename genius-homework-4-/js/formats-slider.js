@@ -1,5 +1,5 @@
-const swiper = new Swiper(".swiper-container", {
-  loop: true,
+const swiper = new Swiper(".mySwiper", {
+  loop: false,
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
