@@ -12,6 +12,7 @@
 
         @media screen and (min-width: $br-tablet) {
             flex-direction: row;
+            padding: 20px;
             gap: 32px;
         }
     }
@@ -45,9 +46,10 @@
         margin: 0 20px;
 
         @media screen and (min-width: $br-tablet) {
-            padding: 48px 57px;
+            padding: 48px 52px;
             max-width: 423px;
             height: 482px;
+            margin: 0;
         }
     }
 

@@ -57,3 +57,7 @@ img {
     height: auto;
     object-fit: cover;
 }
+
+*::marker {
+    display: none;
+}
