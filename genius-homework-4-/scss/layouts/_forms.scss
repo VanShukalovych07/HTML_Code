@@ -1,7 +1,11 @@
 .form {
     &__field {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         height: 52px;
+
+        @media screen and (min-width: $br-tablet) {
+            margin-bottom: 24px;
+        }
     }
 
     &__terms {

@@ -34,7 +34,7 @@
         }
 
         @media screen and (min-width: $br-desktop) {
-            gap: 148px;
+            gap: 118px;
             padding: 56px 100px;
         }
     }
@@ -60,7 +60,7 @@
         }
 
         @media screen and (min-width: $br-desktop) {
-            gap: 148px;
+            gap: 118px;
         }
     }
 
@@ -68,6 +68,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media screen and (min-width: $br-tablet) {
+            justify-content: start;
+        }
     }
 
     &__link {
@@ -81,13 +85,14 @@
         width: 100%;
 
         @media screen and (min-width: $br-tablet) {
+            justify-content: start;
             font-size: 14px;
             max-width: 180px;
         }
 
         @media screen and (min-width: $br-desktop) {
             font-size: 16px;
-            min-width: 180px;
+            min-width: 210px;
         }
 
         &--hidden-first {
@@ -137,11 +142,13 @@
 
     &__icons-list {
         display: flex;
+        justify-content: center;
         gap: 20px;
         margin-bottom: 8px;
 
         @media screen and (min-width: $br-tablet) {
             margin-bottom: 0;
+            justify-content: start;
             width: 100%;
             max-width: 180px;
         }
