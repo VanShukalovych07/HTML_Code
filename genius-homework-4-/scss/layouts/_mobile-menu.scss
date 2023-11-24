@@ -9,6 +9,10 @@
     transition: transform 1s;
     z-index: 2;
 
+    @media screen and (min-width: $br-tablet) {
+        display: none;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
