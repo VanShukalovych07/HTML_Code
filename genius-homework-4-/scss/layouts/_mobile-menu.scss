@@ -7,24 +7,53 @@
     background-color: var(--color-primary-light);
     transform: translateX(100%);
     transition: transform 1s;
+    z-index: 2;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+
+    &__list {
+        display: block;
+
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+    }
+
+    &__contacts-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__contacts-icon {
+        fill: var(--color-primary-dark);
+    }
+
+    &__link {
+        margin-bottom: 16px;
+    }
 
     &.is-open {
         transform: translateX(0);
     }
 
     &__btn-close {
-        width: 32px;
-        height: 32px;
+        width: 15px;
+        height: 15px;
         position: absolute;
-        top: 30px;
-        right: 18px;
-        // fill: var(--color-primary-dark);
+        top: 22px;
+        right: 22px;
         background-color: transparent;
+        background-image: url(../images/menu-close-png.png);
+        color: var(--color-primary-dark);
         background-repeat: no-repeat;
         border: none;
         padding: 16px;
         cursor: pointer;
         padding: 0;
-
     }
 }
