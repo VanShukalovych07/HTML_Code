@@ -59,10 +59,11 @@
                     <a class="mobile-menu__logo" href="./index.html"><img src="./images/logo.svg"
                             alt="логотип beauty zone"></a>
                     <ul class="mobile-menu__list">
-                        <li><a class="link mobile-menu__link" href="#changes-section">Про нас</a></li>
-                        <li><a class="link mobile-menu__link" href="#adventages-section">Чому ми</a></li>
-                        <li><a class="link mobile-menu__link" href="#procedures-section">Наші процедури</a></li>
-                        <li><a class="link mobile-menu__link" href="#contact-section">Контакти</a></li>
+                        <li><a class="link mobile-menu__link menu-link" href="#changes-section">Про нас</a></li>
+                        <li><a class="link mobile-menu__link menu-link" href="#adventages-section">Чому ми</a></li>
+                        <li><a class="link mobile-menu__link menu-link" href="#procedures-section">Наші процедури</a>
+                        </li>
+                        <li><a class="link mobile-menu__link menu-link" href="#contact-section">Контакти</a></li>
                     </ul>
                     <ul class="mobile-menu__contacts-list">
                         <li>
@@ -130,8 +131,11 @@
                         </p>
                     </div>
                     <div class="changes-section__photos">
-                        <img class="changes-section__womans" src="./images/woman-before.jpg" alt="Жінка фото після">
+                        <img class="changes-section__womans" src="./images/woman-before.jpg"
+                            srcset="./images/woman-before.jpg 1x, ./images/woman-before@2x.jpg 2x"
+                            alt="Жінка фото після">
                         <img class="changes-section__womans changes-section__womans--after"
+                            srcset="./images/woman-after.jpg 1x, ./images/woman-after@2x.jpg 2x"
                             src="./images/woman-after.jpg" alt="Жінка фото після">
                     </div>
                 </div>
@@ -351,7 +355,7 @@
             </address>
             <div>
                 <a class="footer__link footer__link--hidden-sec" href="#" target="blank"> Політика конфіденційності</a>
-                <p class="footer__address-copyright"> &copy; 2022 Дані захищені</p>
+                <p class="footer__address-copyright"> &copy;2022 Дані захищені</p>
             </div>
         </div>
     </footer>
